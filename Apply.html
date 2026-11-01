@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply | Pamoja Loans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            Pamoja<span>Loans</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="apply.html">Apply</a>
+        </nav>
+    </header>
+
+    <main class="application-section">
+        <div class="application-container">
+
+            <div class="form-heading">
+                <p class="tagline">PAMOJA LOANS</p>
+                <h1>Application Demonstration</h1>
+                <p>Complete this sample form to test our system.</p>
+            </div>
+
+            <form id="loanForm">
+
+                <label for="fullname">Full Name</label>
+                <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter a fictional name"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter a test number"
+                    required
+                >
+
+                <label for="amount">Sample Loan Amount (KES)</label>
+                <input
+                    type="number"
+                    id="amount"
+                    min="100"
+                    placeholder="e.g. 5000"
+                    required
+                >
+
+                <label for="period">Sample Repayment Period</label>
+                <select id="period" required>
+                    <option value="">Choose a period</option>
+                    <option value="3 months">3 months</option>
+                    <option value="6 months">6 months</option>
+                    <option value="12 months">12 months</option>
+                </select>
+
+                <label for="purpose">Purpose of Application</label>
+                <textarea
+                    id="purpose"
+                    rows="4"
+                    placeholder="Enter a fictional purpose"
+                    required
+                ></textarea>
+
+                <button type="submit" class="primary-btn">
+                    Submit Test Application
+                </button>
+
+                <p id="formMessage" role="status"></p>
+
+            </form>
+
+            <p class="notice">
+                DEMONSTRATION ONLY: This project does not offer or approve
+                real loans. Use fictional test information only.
+                No real customer information should be submitted.
+            </p>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Pamoja Loans. Educational demonstration only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
